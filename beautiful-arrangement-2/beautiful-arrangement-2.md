@@ -9,17 +9,21 @@ If there are multiple answers, print any of them.
 
 ## Example 1
 
-Input: n = 3, k = 1  
-Output: [1, 2, 3]  
+```text
+Input: n = 3, k = 1
+Output: [1, 2, 3]
 Explanation: The [1, 2, 3] has three different positive integers ranging from 1 to 3, and the [1, 1] has exactly 1 distinct integer: 1.
+```
 
 ## Example 2
 
+```text
 Input: n = 3, k = 2
 Output: [1, 3, 2]
 Explanation: The [1, 3, 2] has three different positive integers ranging from 1 to 3, and the [2, 1] has exactly 2 distinct integers: 1 and 2.
 Note:
 The n and k are in the range 1 <= k < n <= 104.
+```
 
 ## Approches
 
@@ -44,5 +48,5 @@ So we can break this problem into two components where we
 2. Treat the remaining k + 1 elements for the k = n - 1 use case.
 3. Stict the two together for the final answer
 
-Time complexity O(n) - We only iterate the array of size n once.
+Time complexity O(n) - We only iterate the array of size n once.  
 Space complexity O(n) - The resulting answer will be of size n.
