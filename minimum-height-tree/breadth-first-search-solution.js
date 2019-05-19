@@ -1,13 +1,12 @@
 const findMinHeightTrees = (n, edges) => {
   if (n === 1) {
-    return 0;
+    return [0];
   }
 
   const adjList = getAdjacencyList(n, edges);
   let leaves = getLeaves(adjList);
 
   while (n > 2) {
-    n -= leaves.length;
     const newLeaves = [];
     for (let leaf of leaves) {
       let leafValue = adjList.get(leaf)[0];
@@ -18,6 +17,7 @@ const findMinHeightTrees = (n, edges) => {
       }
       adjList.set(leaf, []);
     }
+    n -= leaves.length;
     leaves = newLeaves;
   }
 
