@@ -1,5 +1,7 @@
 # Populating Next Right Pointers in Each Node II
 
+Problem originally from: <https://leetcode.com/problems/populating-next-right-pointers-in-each-node-ii/>
+
 Given a binary tree
 
 ```c
